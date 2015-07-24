@@ -8,6 +8,8 @@ Vim plugin for bookmarklet generation
 
 ## How to use
 
+![samplegif](https://github.com/AtsushiSakai/bookmarklet.vim/blob/master/sample/sample.gif)
+
 
 1. Write a javascript code for bookmarklet
 
