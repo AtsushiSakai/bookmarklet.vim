@@ -14,8 +14,22 @@ let g:loaded_bookmarklet = 1
 let s:save_cpo = &cpo
 set cpo&vim
 
-function! bookmarklet#Bookmarklet_test()
-echon "hellow book marklet"
+function! bookmarklet#GenerateBookmarklet()
+" generate bookmarklet
+echon "hello bookmarklet"
+python << EOF
+import vim
+
+# Get selected lines with visual mode
+var=""
+for i in vim.current.range:
+    var+=i
+
+print var
+
+
+
+EOF
 endfunction
 
 let &cpo = s:save_cpo
