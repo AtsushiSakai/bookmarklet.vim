@@ -17,7 +17,6 @@ set cpo&vim
 function! bookmarklet#GenerateBookmarklet()
 " generate bookmarklet
 
-"echon "hello bookmarklet"
 python << EOF
 import vim
 
