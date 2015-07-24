@@ -15,9 +15,9 @@ Vim plugin for bookmarklet generation
 
 2. Command ":GenerateBookmarklet"
 
-3. Generate bookmarklet on the new buffer
+3. the bookmarklet is generated in a new buffer
 
-4. copy and use the bookmaarklet :)
+4. copy and use the bookmarklet :)
 
 ## License
 MIT License. Copyright (c) 2015 Atsushi Sakai
