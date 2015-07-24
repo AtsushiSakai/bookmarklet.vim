@@ -14,7 +14,7 @@ let g:loaded_bookmarklet = 1
 let s:save_cpo = &cpo
 set cpo&vim
 
-function! Bookmarklet_test()
+function! bookmarklet.vim#Bookmarklet_test()
 echon "hellow book marklet"
 endfunction
 
