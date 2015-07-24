@@ -6,10 +6,10 @@
 
 scriptencoding utf-8
 
-"if !exists('g:loaded_bookmarklet')
-  ""  finish
-""endif
-""let g:loaded_bookmarklet = 1
+if !exists('g:loaded_bookmarklet')
+  finish
+endif
+let g:loaded_bookmarklet = 1
 
 let s:save_cpo = &cpo
 set cpo&vim
@@ -17,22 +17,22 @@ set cpo&vim
 function! bookmarklet#GenerateBookmarklet()
 " generate bookmarklet
 
-python << EOF
+py << EOF
 import vim
 
 # Get selected lines with visual mode
-var="javascript:(function(){"
+code="javascript:(function(){"
 for i in vim.current.buffer:
-    var+=i
+  code+=i
 
-var+="})()"
+code+="})()"
 
 #Open new file
 vim.command("vnew +enew")
-#print var
+#print code
 
 #save bookmarklet on the new buffer
-vim.current.buffer[0](var)
+vim.current.buffer[0]=(code)
 
 EOF
 endfunction
