@@ -15,7 +15,7 @@ let s:save_cpo = &cpo
 set cpo&vim
 
 " Command enable
-command! -nargs=1 Bookmarklet :call bookmarklet#Bookmarklet_test()
+command! -nargs=0 Bookmarklet :call bookmarklet#Bookmarklet_test()
 
 let &cpo = s:save_cpo
 unlet s:save_cpo
